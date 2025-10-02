@@ -144,12 +144,12 @@ function getCookie(name){
 
 // Initial prizes
 let defaultPrizes = {
-  "Drink Coupon":5,
-  "Food Coupon":5,
-  "Knorr Shell Box":5,
-  "Vaseline Sample":5,
-  "KMF Sachet":5,
-  "CMP Docket":5
+  "Drink Coupon":10,
+  "Food Coupon":0,
+  "Knorr Shell Box":10,
+  "Vaseline Sample":24,
+  "KMF Sachet":20,
+  "CMP Docket":10
 };
 
 // Load prizes from cookie or use defaults
@@ -222,7 +222,7 @@ function checkMatch(){
 }
 
 function startCountdown(){
-  countdown=25;
+  countdown=17;
   document.getElementById('countdown').innerText=countdown;
   countdownInterval=setInterval(()=>{
     countdown--;
